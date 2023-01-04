@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55FA6846-83A4-48B6-A80C-7F781E50347F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsForms訂購單</RootNamespace>
+    <AssemblyName>WindowsForms訂購單</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage.Designer.cs">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="join_members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="join_members.Designer.cs">
+      <DependentUpon>join_members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager.Designer.cs">
+      <DependentUpon>manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_appetizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_appetizer.designer.cs">
+      <DependentUpon>menu_appetizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_dessert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_dessert.designer.cs">
+      <DependentUpon>menu_dessert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_dish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_dish.designer.cs">
+      <DependentUpon>menu_dish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_drink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_drink.designer.cs">
+      <DependentUpon>menu_drink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_main.designer.cs">
+      <DependentUpon>menu_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="old_members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="old_members.Designer.cs">
+      <DependentUpon>old_members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderCart.designer.cs">
+      <DependentUpon>OrderCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestaurantDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="temp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homepage.resx">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="join_members.resx">
+      <DependentUpon>join_members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager.resx">
+      <DependentUpon>manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_appetizer.resx">
+      <DependentUpon>menu_appetizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_dessert.resx">
+      <DependentUpon>menu_dessert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_dish.resx">
+      <DependentUpon>menu_dish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_drink.resx">
+      <DependentUpon>menu_drink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_main.resx">
+      <DependentUpon>menu_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old_members.resx">
+      <DependentUpon>old_members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderCart.resx">
+      <DependentUpon>OrderCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="temp.resx">
+      <DependentUpon>temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="myDBDataSet.xsc">
+      <DependentUpon>myDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myDBDataSet.xss">
+      <DependentUpon>myDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RestaurantDataSet.xsc">
+      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSet.xss">
+      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cart1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
